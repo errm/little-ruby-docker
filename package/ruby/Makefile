@@ -8,10 +8,10 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=ruby
-PKG_VERSION:=1.9.3-p545
+PKG_VERSION:=2.0.0-p481
 PKG_RELEASE:=1
 
-PKG_LIBVER:=1.9
+PKG_LIBVER:=2.0
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
 PKG_SOURCE_URL:=http://cache.ruby-lang.org/pub/ruby/$(PKG_LIBVER)/
