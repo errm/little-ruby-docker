@@ -62,6 +62,7 @@ CONFIGURE_ARGS += \
 	--disable-rpath \
 	--enable-ipv6 \
 	--with-ruby-version=minor \
+	--disable-install-rdoc \
 	--with-iconv-dir=$(ICONV_PREFIX) \
 
 TARGET_LDFLAGS += -L$(PKG_BUILD_DIR)
