@@ -52,9 +52,9 @@ $(call Package/ruby/Default/description)
 endef
 
 HOST_CONFIGURE_ARGS += \
-	--disable-install-doc \
-	--disable-install-rdoc \
-	--disable-install-capi
+        --disable-install-doc \
+        --disable-install-rdoc \
+        --disable-install-capi
 
 CONFIGURE_ARGS += \
 	--enable-shared \
@@ -63,6 +63,8 @@ CONFIGURE_ARGS += \
 	--enable-ipv6 \
 	--with-ruby-version=minor \
 	--disable-install-rdoc \
+	--disable-install-doc \
+	--disable-install-capi \
 	--with-iconv-dir=$(ICONV_PREFIX) \
 
 TARGET_LDFLAGS += -L$(PKG_BUILD_DIR)
