@@ -60,9 +60,7 @@ CONFIGURE_ARGS += \
 	--enable-shared \
 	--enable-static \
 	--disable-rpath \
-	--enable-ipv6 \
 	--with-ruby-version=minor \
-	--with-iconv-dir=$(ICONV_PREFIX) \
 
 TARGET_LDFLAGS += -L$(PKG_BUILD_DIR)
 
