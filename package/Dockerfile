@@ -14,6 +14,6 @@ ADD ruby /home/openwrt/sdk/package/ruby
 RUN cd /home/openwrt/sdk/package/ruby &&\
     chown openwrt:openwrt Makefile &&\
     chown openwrt:openwrt patches/001-ignore_wide_getaddrinfo_while_crosscompiling.patch
-ENTRYPOINT chown openwrt:openwrt /home/openwrt/sdk/target/linux/x86_64/ &&\ 
+ENTRYPOINT chown openwrt:openwrt /home/openwrt/sdk/bin/ &&\ 
            sudo -iu openwrt /bin/bash -c 'cd sdk &&\
            make package/ruby/{clean,compile,install} V=s'
