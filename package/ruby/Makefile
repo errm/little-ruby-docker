@@ -44,7 +44,7 @@ endef
 define Package/ruby
 $(call Package/ruby/Default)
   TITLE+= (interpreter)
-  DEPENDS+= +libpthread +librt +libdb47 +libffi +libgdbm +libncurses +libncursesw +libopenssl +libreadline +zlib +libyaml +libgmp
+  DEPENDS+= +libpthread +librt +libdb47 +libffi +libgdbm +libncurses +libncursesw +libopenssl +libreadline +zlib +libyaml +libgmp +libgdbm
 endef
 
 define Package/ruby/description
